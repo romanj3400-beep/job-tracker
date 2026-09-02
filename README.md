@@ -1,3 +1,3 @@
 # JobTrack
 
-A full-stack job application tracking platform built with React, Flask, and MySQL.
+Full-stack job application tracking system built with Python, Flask, MySQL, HTML, CSS, and JavaScript.
