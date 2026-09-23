@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+```
+<header>
+    <div class="top-bar">
+
+    <h1>JobTrack</h1>
+
+    <button id="logout-btn">
+        Logout
+    </button>
+
+</div>
+    <p>Track your internship applications</p>
+</header>
+
+<main>
+
+    <section class="dashboard">
+
+        <div class="stat-card">
+            <h2 id="total-applications">0</h2>
+            <p>Total Applications</p>
+        </div>
+
+        <div class="stat-card">
+            <h2 id="interview-count">0</h2>
+            <p>Interviews</p>
+        </div>
+
+        <div class="stat-card">
+            <h2 id="offer-count">0</h2>
+            <p>Offers</p>
+        </div>
+<div class="stat-card">
+    <h2 id="rejected-count">0</h2>
+    <p>Rejected</p>
+</div>
+<div class="stat-card">
+    <h2 id="follow-up-count">0</h2>
+    <p>Follow-Ups Due</p>
+</div>
+<div class="stat-card">
+    <h2 id="success-rate">0%</h2>
+    <p>Interview / Offer Rate</p>
+</div>
+    </section>
+    <section class="follow-up-section">
+
+    <div class="section-header">
+        <h2>Follow-Ups</h2>
+    </div>
+
+    <div id="follow-up-list">
+        <p>No upcoming follow-ups.</p>
+    </div>
+
+</section>
+
+<section class="analytics-section">
+
+    <div class="section-header">
+        <h2>Application Analytics</h2>
+    </div>
+
+    <div class="analytics-grid">
+
+        <div class="analytics-item">
+            <span>Applied</span>
+            <strong id="analytics-applied">0</strong>
+        </div>
+
+        <div class="analytics-item">
+            <span>Interviews</span>
+            <strong id="analytics-interview">0</strong>
+        </div>
+
+        <div class="analytics-item">
+            <span>Offers</span>
+            <strong id="analytics-offer">0</strong>
+        </div>
+
+        <div class="analytics-item">
+            <span>Rejected</span>
+            <strong id="analytics-rejected">0</strong>
+        </div>
+
+    </div>
+
+</section>
+
+    <section class="applications-section">
+
+        <div class="section-header">
+    <h2>Applications</h2>
+
+    <button id="add-application-btn">
+        + Add Application
+    </button>
+</div>
+
+<div class="application-filters">
+
+    <input
+        type="text"
+        id="search-input"
+        placeholder="Search applications..."
+    >
+
+    <select id="status-filter">
+        <option value="All">All Statuses</option>
+        <option value="Applied">Applied</option>
+        <option value="Interview">Interview</option>
+        <option value="Offer">Offer</option>
+        <option value="Rejected">Rejected</option>
+    </select>
+
+    <select id="sort-filter">
+        <option value="newest">Newest First</option>
+        <option value="oldest">Oldest First</option>
+    </select>
+
+</div>
+
+        <div id="applications-container">
+            <p>Loading applications...</p>
+        </div>
+
+<div id="application-form" class="application-form hidden">
+
+    <h2 id="form-title">Add Application</h2>
+
+    <form id="add-application-form">
+
+   <label for="company">Company</label>
+<input
+    type="text"
+    id="company"
+    placeholder="e.g. Google"
+    required
+>
+
+<label for="position">Position</label>
+<input
+    type="text"
+    id="position"
+    placeholder="e.g. Software Engineer Intern"
+    required
+>
+
+<label for="location">Location</label>
+<input
+    type="text"
+    id="location"
+    placeholder="e.g. Remote or Los Angeles, CA"
+>
+
+<label for="status">Status</label>
+<select id="status">
+    <option value="Applied">Applied</option>
+    <option value="Interview">Interview</option>
+    <option value="Offer">Offer</option>
+    <option value="Rejected">Rejected</option>
+</select>
+
+<label for="date_applied">Date Applied</label>
+<input
+    type="date"
+    id="date_applied"
+>
+<label for="follow_up_date">Follow-Up Date</label>
+<input
+    type="date"
+    id="follow_up_date"
+>
+<label for="job_url">Job Posting URL</label>
+<input
+    type="url"
+    id="job_url"
+    placeholder="https://..."
+>
+
+<label for="salary">Salary</label>
+<input
+    type="number"
+    id="salary"
+    placeholder="e.g. 50000"
+>
+
+<label for="notes">Notes</label>
+<textarea
+    id="notes"
+    placeholder="Add notes about this application..."
+></textarea>
+
+<div class="form-buttons">
+    <button type="submit" id="submit-btn">Save Application</button>
+    <button type="button" id="cancel-btn">Cancel</button>
+</div>
+        
+
+    </form>
+
+</div>
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+```
+
+</body>
+</html>
+

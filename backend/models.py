@@ -14,6 +14,8 @@ class Application(db.Model):
 
     date_applied = db.Column(db.Date)
 
+    follow_up_date = db.Cloumn(db.Date)
+
     salary = db.Column(db.Integer)
 
     job_url = db.Column(db.String(500))
